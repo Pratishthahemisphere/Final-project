@@ -1,0 +1,37 @@
+# ==============================================================================
+# SPECIES TO BINARY CLASS MAPPING CONFIGURATION
+# ==============================================================================
+# IMPORTANT HERPETOLOGY NOTICE:
+# Visual identification of snakes is safety-critical. Taxonomies, venom toxicity,
+# and medical significance vary across geographic regions and subspecies.
+#
+# YOU MUST VERIFY EVERY SPECIES LABEL WITH A RELIABLE, SCIENTIFIC HERPETOLOGICAL
+# SOURCE BEFORE TRAINING OR CLINICAL/FIELD EVALUATION:
+#   - WHO Guidelines for the Clinical Management of Snakebites
+#   - The Reptile Database (reptile-database.reptarium.cz)
+#   - Local poison control or certified university herpetology departments
+# ==============================================================================
+
+species_mapping:
+  # ----------------------------------------------------------------------------
+  # VENOMOUS SPECIES (Medically Significant - High Risk)
+  # ----------------------------------------------------------------------------
+  "Naja_naja": "venomous"                      # Indian Cobra (Elapidae, neurotoxic)
+  "Ophiophagus_hannah": "venomous"             # King Cobra (Elapidae, neurotoxic)
+  "Daboia_russelii": "venomous"                # Russell's Viper (Viperidae, hemotoxic)
+  "Echis_carinatus": "venomous"                # Saw-scaled Viper (Viperidae, hemotoxic)
+  "Bungarus_caeruleus": "venomous"             # Common Krait (Elapidae, potent neurotoxin)
+  "Crotalus_atrox": "venomous"                 # Western Diamondback Rattlesnake (Viperidae)
+  "Bothrops_atrox": "venomous"                 # Common Lancehead / Fer-de-lance (Viperidae)
+  "Dendroaspis_polylepis": "venomous"          # Black Mamba (Elapidae, fast-acting neurotoxin)
+
+  # ----------------------------------------------------------------------------
+  # NON-VENOMOUS SPECIES (Harmless or Non-Medically Significant)
+  # ----------------------------------------------------------------------------
+  "Pantherophis_guttatus": "non_venomous"      # Corn Snake (Colubridae, constrictor)
+  "Ptyas_mucosa": "non_venomous"               # Oriental Ratsnake (Colubridae, aglyphous)
+  "Python_bivittatus": "non_venomous"          # Burmese Python (Pythonidae, non-venomous constrictor)
+  "Thamnophis_sirtalis": "non_venomous"        # Common Garter Snake (Colubridae)
+  "Lampropeltis_triangulum": "non_venomous"    # Milk Snake (Colubridae, Batesian mimic of coral snake)
+  "Heterodon_platirhinos": "non_venomous"      # Eastern Hognose Snake (Colubridae)
+  "Boa_constrictor": "non_venomous"            # Boa Constrictor (Boidae)

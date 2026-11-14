@@ -1,0 +1,42 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# Datasets (ignore contents but keep structure via .gitkeep)
+data/raw/*
+!data/raw/venomous/
+!data/raw/non_venomous/
+!data/raw/venomous/.gitkeep
+!data/raw/non_venomous/.gitkeep
+data/raw_smoke/
+data/processed/*
+!data/processed/.gitkeep
+
+# Outputs (ignore runs, checkpoints, plots, logs but keep folders via .gitkeep)
+outputs/checkpoints/*
+!outputs/checkpoints/.gitkeep
+outputs/plots/*
+!outputs/plots/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
